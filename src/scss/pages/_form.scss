@@ -1,8 +1,10 @@
+@use '../core/variables' as vars; 
+
 .form_container {
     margin: 20px;
     padding: 30px;
     display: inline-block;
-    border: solid 3px #6E92E6;
+    border: solid 3px vars.$colorB1;
 }
 .form_title{
     color: #A68129;
