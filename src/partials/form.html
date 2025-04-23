@@ -1,36 +1,72 @@
 <div class="form_container">
-    <h2 class="form_title">RELLENA</h2>
-<form class="formAdaCurri" method="" enctype="multipart/form-data">
+  <h2 class="form_title">RELLENA</h2>
+  
+  <form class="formAdaCurri" method="" enctype="multipart/form-data">
+    <label for="profilePhoto">Selecciona una imagen de perfil</label>
+    <input
+      type="file"
+      id="profilePhoto"
+      class="js-profilePhoto"
+      name="image"
+      accept="image/*"
+    />
+    <button class="photoBtn">Añadir Imagen</button>
 
-<label for="photoInput">Selecciona una imagen de perfil</label>
-<input type="file" class="photoInput" name="image" accept="image/*" >
-<button class="photoBtn">Añadir Imagen</button>
+    <label for="name">Nombre</label>
+    <input type="text" id="name" class="js-name" placeholder="Ej. Selene" />
 
-<label for="nameInput">Nombre</label>
-<input type="text" class="nameInput" placeholder="Ej. Selene">
+    <label for="lastname">Apellido(s)</label>
+    <input
+      type="text"
+      id="lastname"
+      class="js-lastname"
+      placeholder="Ej. Luna García"
+    />
 
-<label for="lastnameInput">Apellido(s)</label>
-<input type="text" class="lastnameInput" placeholder="Ej. Luna García">
+    <label for="occupation">Ocupación/Profesión</label>
+    <input
+      type="text"
+      id="occupation"
+      class="js-occupation"
+      placeholder="Ej. Front-end Junior"
+    />
 
-<label for="occupationInput">Ocupación/Profesión</label> 
-<input type="text" class="occupationInput" placeholder="Ej. Front-end Junior">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      class="js-email"
+      placeholder="Ej. seluna@gmail.com"
+      required
+    />
 
-<label for="emailInput">Email</label>
-<input type="email" class="emailInput" placeholder="Ej. seluna@gmail.com" required>
+    <label for="phone">Teléfono</label>
+    <input
+      type="tel"
+      id="phone"
+      class="js-phone"
+      placeholder="Ej. 885-55-85-88"
+    />
 
-<label for="phoneInput">Teléfono</label>
-<input type="tel" class="phoneInput" placeholder="Ej. 885-55-85-88">
+    <label for="linksocial">LinkedIn/Contacto</label>
+    <input
+      type="text"
+      id="linksocial"
+      class="js-linksocial"
+      placeholder="EJ. linkedn.com/in/selene-luna"
+    />
 
-<label for="linkInput">LinkedIn/Contacto</label>
-<input type="text" class="linkInput" placeholder="EJ. linkedn.com/in/selene-luna">
+    <label for="attachments">Adjuntar archivo</label>
+    <input
+      type="file"
+      id="attachments"
+      class="js-attachments"
+      placeholder="Adjuntar archivo"
+    />
 
-<label for="attachmentsInput">Adjuntar archivo</label>
-<input type="file" class="attachmentsInput" placeholder="Adjuntar archivo">
+    <label for="moreAbout">Más acerca de mí</label>
+    <input type="text" id="moreAbout" class="js-moreAbout" />
 
-<label for="moreAboutInput">Más acerca de mí</label>
-<input type="text" class="moreAboutInput">
-
-<button class="createCardBtn">CREAR TARJETA</button>
-
-</form>
+    <button class="js-reateCardBtn">CREAR TARJETA</button>
+  </form>
 </div>
