@@ -1,9 +1,10 @@
-@use '../core/variables' as vars;
+@use "../core/variables" as vars;
 
 .page__footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: vars.$colorB1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }

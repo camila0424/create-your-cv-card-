@@ -1,0 +1,11 @@
+@use "../core/variables" as vars;
+
+.link__adalab:hover {
+  background-color: #099d8d;
+  color: #fff;
+}
+
+.link__github:hover {
+  background-color: #ccc;
+  color: #000;
+}
