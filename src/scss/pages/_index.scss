@@ -2,7 +2,6 @@
 
 //logo//
 .hero {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,13 +16,13 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     animation: shrinkIn 1.2s ease forwards;
 }
 
 .logo_landing,
 .letter_logo {
-  max-height: 5rem;
+  max-height: 6rem;
   height: auto;
 }
             /*animación del logo*/
@@ -45,8 +44,8 @@
 //girl//
 .imagen-container {
     width: 100%;
-    max-width: 400px;
-    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-bottom: 4rem;
     margin-top: 2rem;
 }
 
@@ -58,13 +57,13 @@
 }
 //text//
 .makeCV {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: #E6A100;
 }
 
 .promo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
 }
 //button//
@@ -74,11 +73,11 @@
     color: #282E3C;
     border: none;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    width: 200px;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    width: 300px;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
     animation: pulse 2s infinite ease-in-out;
 }
 @keyframes pulse {
