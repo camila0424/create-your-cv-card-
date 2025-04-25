@@ -1,24 +1,14 @@
 <div class="form_container">
   <h2 class="form_title">Completa tus datos</h2>
   
-  <form class="formAdaCurri" method="" enctype="multipart/form-data">
-    <label for="profilePhoto">Selecciona una imagen de perfil</label>
-    <input
-      type="file"
-      id="profilePhoto"
-      class="js-profilePhoto"
-      name="image"
-      accept="image/*"
-    />
-
+  <form class="formAdaCurri">
     <label for="name">Nombre</label>
-    <input type="text" id="name" class="js-name" placeholder="Ej. Selene" />
+    <input type="text" id="name" placeholder="Ej. Selene" />
 
     <label for="lastname">Apellido(s)</label>
     <input
       type="text"
       id="lastname"
-      class="js-lastname"
       placeholder="Ej. Luna Lara"
     />
 
@@ -26,7 +16,6 @@
     <input
       type="text"
       id="occupation"
-      class="js-occupation"
       placeholder="Ej. Front-end Junior"
     />
 
@@ -34,7 +23,6 @@
     <input
       type="email"
       id="email"
-      class="js-email"
       placeholder="Ej. seluna@gmail.com"
       required
     />
@@ -43,24 +31,30 @@
     <input
       type="tel"
       id="phone"
-      class="js-phone"
       placeholder="Ej. 885-55-85-88"
     />
 
-    <label for="linksocial">LinkedIn/Contacto</label>
+    <label for="linksocial">LinkedIn</label>
     <input
       type="text"
       id="linksocial"
-      class="js-linksocial"
       placeholder="EJ. linkedn.com/in/selene-luna"
     />
 
-    <label for="attachments">Adjuntar archivo</label>
+    <!-- <label for="attachments">Adjuntar archivo</label>
     <input
       type="file"
       id="attachments"
       class="js-attachments"
       placeholder="Adjuntar archivo"
+    /> -->
+
+    <label for="profilePhoto">Selecciona una imagen de perfil</label>
+    <input
+      type="file"
+      id="profilePhoto"
+      name="image"
+      accept="image/*"
     />
 
     <label for="moreAbout">Más acerca de mí</label>
@@ -68,4 +62,18 @@
 
     <button class="js-reateCardBtn">CREA TU CV</button>
   </form>
+</div>
+
+<div class="container__preview">
+  <section class="target__preview">
+    <h2 class="js-preview_name"></h2>
+    <h2 class="js-preview_lastname">Apellido</h2>
+    <h3 class="js-preview_occupation">Ocupación</h3>
+    <h3 class="js-preview_email">Email</h3>
+    <h3 class="js-preview_phone">Teléfono</h3>
+    <h3 class="js-preview_linksocial">LinkedIn</h3>
+    <p class="js-preview_moreAbout"></p>
+    <img class="js-preview_photoProfile" alt="Foto de perfil" />
+  </section>
+
 </div>
