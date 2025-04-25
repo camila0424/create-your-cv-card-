@@ -1,9 +1,27 @@
 @use "../core/variables" as vars;
 
 .page__footer {
-  padding: 3rem;
+  padding: 1.5rem;
   margin: 0rem;
   display: flex;
   justify-content: space-between;
-  background-color: vars.$colorB1;
+  background-color: vars.$colorB2;
+  border-top: solid 1rem vars.$colorY2;
+}
+
+.footer_social_media {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+@media all and (max-width: 768px) {
+  .page__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-top: solid 0.5rem vars.$colorY2;
+  }
 }
