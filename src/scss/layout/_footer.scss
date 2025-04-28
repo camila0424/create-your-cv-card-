@@ -2,8 +2,12 @@
 
 .page__footer {
   padding: 1.5rem;
+<<<<<<< HEAD
   margin: 0rem;
   width: 100vw; 
+=======
+  width: 100%;
+>>>>>>> 203e48dddbd04770b1d7188d4ef7a79f3af1549f
   background-color: vars.$colorB2;
   display: flex;
   flex-direction: column;
@@ -22,8 +26,12 @@
 @media all and (min-width: 768px) {
   .page__footer {
     display: flex;
-    width: 100vw;
     justify-content: space-between;
+    flex-direction: row;
     border-top: solid 1rem vars.$colorY2;
+    padding: 2rem;
+  }
+  .footer_brand {
+    font-size: 1rem;
   }
 }
