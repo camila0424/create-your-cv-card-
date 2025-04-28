@@ -2,22 +2,22 @@
 
 //logo//
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    text-align: center;
-    margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 5rem;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 3rem;
-    animation: shrinkIn 1.2s ease forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  animation: shrinkIn 1.2s ease forwards;
 }
 
 .logo_landing,
@@ -25,79 +25,77 @@
   max-height: 6rem;
   height: auto;
 }
-            /*animación del logo*/
-@keyframes shrinkIn { 
-    0% {
-      transform: scale(1.5); /* Empieza más grande */
-      opacity: 0;
-    }
-    50% {
-      transform: scale(0.9); /* Se reduce un poquito más de su tamaño normal */
-      opacity: 0.8;
-    }
-    100% {
-      transform: scale(1); /* Queda en su tamaño normal */
-      opacity: 1;
-    }
+/*animación del logo*/
+@keyframes shrinkIn {
+  0% {
+    transform: scale(1.5); /* Empieza más grande */
+    opacity: 0;
   }
+  50% {
+    transform: scale(0.9); /* Se reduce un poquito más de su tamaño normal */
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1); /* Queda en su tamaño normal */
+    opacity: 1;
+  }
+}
 
 //girl//
 .imagen-container {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .imag-girl {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 //text//
 .makeCV {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #E6A100;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #e6a100;
 }
 
 .promo {
-    font-size: 1.5rem;
-    color: white;
+  font-size: 1.5rem;
+  color: white;
 }
 //button//
 .start_tbn {
-    padding: 0.75rem 1.5rem;
-    background-color: #6E92E6;
-    color: #282E3C;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    width: 300px;
-    margin-bottom: 4rem;
-    margin-top: 3rem;
-    animation: pulse 2s infinite ease-in-out;
+  padding: 0.75rem 1.5rem;
+  background-color: #6e92e6;
+  color: #282e3c;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 300px;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  animation: pulse 2s infinite ease-in-out;
 }
 @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05); /* Crece un poquito */
-    }
-    100% {
-      transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.05); /* Crece un poquito */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 button:hover {
-    background-color: white;
-  }
+  background-color: white;
+}
 
-
-
- /*  @media (min-width: 768px) {
+/*  @media (min-width: 768px) {
     .logo-container {
       gap: 1rem;
     }
@@ -111,4 +109,3 @@ button:hover {
       font-size: 1.1rem;
     }
   } */
-
