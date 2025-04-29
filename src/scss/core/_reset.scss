@@ -10,6 +10,25 @@ html {
   background-color: vars.$colorYB;
   color: white;
   font-family: vars.$tipo1;
+ 
+}
+
+body {
+  height: 100vh;
+}
+
+@use "../core/variables" as vars;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: vars.$colorYB;
+  color: white;
+  font-family: vars.$tipo1;
 }
 
 body {
