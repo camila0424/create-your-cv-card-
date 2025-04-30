@@ -3,7 +3,8 @@
 .form_container {
   margin: 20px;
   padding: 30px;
-  display: inline-block;
+  max-width: 500px;
+  margin-inline: auto;
   border: solid 3px vars.$colorB1;
 }
 .form_title {
@@ -11,17 +12,19 @@
   color: vars.$colorY2;
 }
 .formAdaCurri {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.container__preview{
-  margin: 20px;
+.container__preview {
+  margin-block: 20px;
   height: 80vh;
   padding: 30px;
-  display: inline-block;
-  background: linear-gradient(45deg, #C2D0D3 0%, #DCE8EC 100%);
+  max-width: 500px;
+  margin-inline: auto;
+  // display: inline-block;
+  background: linear-gradient(45deg, #c2d0d3 0%, #dce8ec 100%);
   border: solid 3px vars.$colorB1;
 }
 

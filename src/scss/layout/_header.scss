@@ -1,8 +1,10 @@
+@use "../core/variables" as vars;
+
 .page__header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1.5rem;
-  width: 100%;
+  // width: 100%;
 }
 
 .logo_header {
@@ -17,7 +19,13 @@
   text-decoration: none;
   color: white;
 }
+<<<<<<< HEAD
 .header_link:link{
   text-decoration: none;
+=======
+
+.collapsed {
+  display: none;
+>>>>>>> 40731f35a7de251f070409de183698a7aa603c0f
 }
  

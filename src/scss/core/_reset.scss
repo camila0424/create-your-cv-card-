@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use "../core/variables" as vars;
 
 * {
@@ -15,3 +16,27 @@ html {
 body {
   height: 100vh;
 }
+=======
+@use "../core/variables" as vars;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: vars.$colorYB;
+  color: white;
+  font-family: vars.$tipo1;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+>>>>>>> 40731f35a7de251f070409de183698a7aa603c0f

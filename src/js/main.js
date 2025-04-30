@@ -13,9 +13,20 @@ const linkSocialCard = document.querySelector(".js-preview_linksocial");
 const moreAboutCard = document.querySelector(".js-preview_moreAbout");
 const photoProfileCard = document.querySelector(".js-preview_photoProfile");
 
+const data = {
+  name: '',
+  email: ''
+
+};
+
 form.addEventListener("input", (event) => {
   const idInput = event.target.id;
   const valueInput = event.target.value;
+
+  data[idInput] = valueInput;
+
+  console.log(data);
+  
 
   if (idInput === "name") {
     nameCard.textContent = valueInput;
@@ -35,3 +46,22 @@ form.addEventListener("input", (event) => {
     photoProfileCard.src = URL.createObjectURL(file);
   } 
 });
+
+// HEADER
+
+const navcontainer = document.querySelector(".nav_container")
+function showmenu() {
+  navcontainer.classList.remove("collapsed");
+}
+
+function hidemenu() {
+  navcontainer.classList.add("collapsed");
+}
+
+function handlemenu(event) {
+  if (newForm.classList.contains("collapsed")) {
+    showmenu();
+  } else {
+    hidemenu();
+  }
+}
