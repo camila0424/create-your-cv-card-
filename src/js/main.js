@@ -35,3 +35,22 @@ form.addEventListener("input", (event) => {
     photoProfileCard.src = URL.createObjectURL(file);
   } 
 });
+
+// HEADER
+
+const navcontainer = document.querySelector(".nav_container")
+function showmenu() {
+  navcontainer.classList.remove("collapsed");
+}
+
+function hidemenu() {
+  navcontainer.classList.add("collapsed");
+}
+
+function handlemenu(event) {
+  if (newForm.classList.contains("collapsed")) {
+    showmenu();
+  } else {
+    hidemenu();
+  }
+}

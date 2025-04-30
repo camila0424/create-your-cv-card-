@@ -1,6 +1,8 @@
+@use "../core/variables" as vars;
+
 .page__header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1.5rem;
   width: 100%;
 }
@@ -14,4 +16,8 @@
 }
 .nav_header {
   list-style: none;
+}
+
+.collapsed {
+  display: none;
 }

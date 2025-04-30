@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdaCurri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="icon" href="./images/adacurri_min.png" />
+  </head>
+
+  <body>
+    <div class="page">
+      <load src="./partials/header.html" title="AdaCurriform" />
+      <main>
+        <div class="container">
+          <form>
+            <label for="fname">Nombre</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Tu nombre..."
+            />
+
+            <label for="lname">Apellido</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Tu apellido"
+            />
+
+            <label for="subject">Mensaje</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Añade tu mensaje"
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </main>
+      <load src="./partials/footer.html" />
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
