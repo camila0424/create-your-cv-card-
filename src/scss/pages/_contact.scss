@@ -1,1 +1,26 @@
 @use "../core/variables" as vars;
+
+.menu {
+  margin: 1rem;
+}
+input {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  height: 38px;
+}
+
+textarea {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  height: 138px;
+}
+input[type="submit"] {
+  color: white;
+  background-color: vars.$colorB1;
+  text-align: center;
+  height: 70px;
+  border-radius: 10px;
+  line-height: 2.5;
+}
