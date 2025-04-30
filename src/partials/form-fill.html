@@ -1,21 +1,27 @@
 <div class="form_container">
   <h2 class="form_title">Completa tus datos</h2>
-  
+
   <form class="formAdaCurri">
     <label for="name">Nombre</label>
-    <input type="text" id="name" placeholder="Ej. Selene" />
+    <input type="text" id="name" class="formAda" placeholder="Ej. Selene" />
 
     <label for="lastname">Apellido(s)</label>
     <input
       type="text"
       id="lastname"
+      class="formAda"
       placeholder="Ej. Luna Lara"
     />
+
+    <span>Imagen de perfil</span>
+    <label id="labelPhoto" for="profilePhoto">Añadir imagen</label>
+    <input type="file" id="profilePhoto" class="formAda" name="image" />
 
     <label for="occupation">Ocupación</label>
     <input
       type="text"
       id="occupation"
+      class="formAda"
       placeholder="Ej. Front-end Junior"
     />
 
@@ -23,6 +29,7 @@
     <input
       type="email"
       id="email"
+      class="formAda"
       placeholder="Ej. seluna@gmail.com"
       required
     />
@@ -31,6 +38,7 @@
     <input
       type="tel"
       id="phone"
+      class="formAda"
       placeholder="Ej. 885-55-85-88"
     />
 
@@ -38,27 +46,25 @@
     <input
       type="text"
       id="linksocial"
-      placeholder="EJ. linkedn.com/in/selene-luna"
+      class="formAda"
+      placeholder="Ej. linkedin.com/in/selene-luna"
     />
 
-    <!-- <label for="attachments">Adjuntar archivo</label>
+    <label for="gitsocial">GitHub</label>
     <input
-      type="file"
-      id="attachments"
-      class="js-attachments"
-      placeholder="Adjuntar archivo"
-    /> -->
-
-    <label for="profilePhoto">Selecciona una imagen de perfil</label>
-    <input
-      type="file"
-      id="profilePhoto"
-      name="image"
-      accept="image/*"
+      type="text"
+      id="gitsocial"
+      class="formAda"
+      placeholder="Ej. github.com/Seluna-92"
     />
 
     <label for="moreAbout">Más acerca de mí</label>
-    <textarea name="moreAbout" id="moreAbout" class="js-moreAbout" rows="10"></textarea>
+    <textarea
+      name="moreAbout"
+      id="moreAbout"
+      class="js-moreAbout"
+      rows="10"
+    ></textarea>
 
     <button class="js-reateCardBtn">CREA TU CV</button>
   </form>
@@ -66,14 +72,38 @@
 
 <div class="container__preview">
   <section class="target__preview">
-    <h2 class="js-preview_name"></h2>
+    <h2 class="js-preview_name">Nombre</h2>
     <h2 class="js-preview_lastname">Apellido</h2>
     <h3 class="js-preview_occupation">Ocupación</h3>
-    <h3 class="js-preview_email">Email</h3>
-    <h3 class="js-preview_phone">Teléfono</h3>
-    <h3 class="js-preview_linksocial">LinkedIn</h3>
-    <p class="js-preview_moreAbout"></p>
-    <img class="js-preview_photoProfile" alt="Foto de perfil" />
-  </section>
+    <div class="preview-photo js-preview_photoProfile"></div>
 
+    <div class="form_socialmedia">
+      <a
+        class="form_socialmedia_ancla js-preview_email"
+        href=""
+        target="_blank"
+      >
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a class="form_socialmedia_ancla js-preview_phone" href="">
+        <i class="fa-solid fa-mobile-screen"></i>
+      </a>
+      <a
+        class="form_socialmedia_ancla js-preview_linksocial"
+        href=""
+        target="_blank"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        class="form_socialmedia_ancla js-preview_gitsocial"
+        href=""
+        target="_blank"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+
+    <p class="js-preview_moreAbout"></p>
+  </section>
 </div>
