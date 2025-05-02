@@ -75,19 +75,13 @@ inputFile.addEventListener('change', () => {
 
 // HEADER
 
-const navcontainer = document.querySelector(".nav_container")
-function showmenu() {
-  navcontainer.classList.remove("collapsed");
-}
-
-function hidemenu() {
-  navcontainer.classList.add("collapsed");
-}
-
-function handlemenu(event) {
-  if (newForm.classList.contains("collapsed")) {
-    showmenu();
+const navheader = document.querySelector(".nav_header");
+const hamburguer = document.querySelector(".hamburguer_header")
+hamburguer.addEventListener('click', () => {
+  if (navheader.classList.contains("nav_collapsed")) {
+    navheader.classList.remove("nav_collapsed");
+    hamburguer.classList.add('nav_collapsed')
   } else {
-    hidemenu();
+    navheader.classList.add("nav_collapsed");
   }
-}
+});
