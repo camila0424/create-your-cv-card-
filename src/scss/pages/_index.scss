@@ -1,4 +1,4 @@
-/* @use 'core/variables'; */
+@use "../core/variables" as vars;
 
 //logo//
 .hero {
@@ -76,6 +76,7 @@
     font-size: 1.5rem;
     cursor: pointer;
     width: 300px;
+    margin-top: 50px;
     margin-bottom: 4rem;
     margin-top: 4rem;
     animation: pulse 2s infinite ease-in-out;
@@ -91,8 +92,8 @@
       transform: scale(1);
     }
   }
-button:hover {
-    background-color: white;
+.start_button:hover {
+      background-color: white;
   }
 
 
@@ -115,23 +116,56 @@ button:hover {
       justify-content: flex-start;
       align-items: center;
       gap: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
+      margin-top: 20px;
+      margin-left: 50px;
     }
 
     .imagen-container {
       grid-column:  1;
-      grid-row: 2;
+      grid-row:  2;
       justify-self: end;
-      width: 100%;
-      max-width: 500px;
+      width: 70%;
+      margin-top: -120px;
+      margin-bottom: 35px;
+      margin-right: 70px;
     }
 
     .content_curri {
       grid-column: 2;
       grid-row: 2;
-      text-align: left;
-      max-width: 500px;
-      justify-self: start;
+      text-align: center;
+      justify-self: center;
+      margin-top: 50px;
+    
+    }
+
+    .makeCV {
+      font-size: 2.5rem;
+      margin-top: -50px;
+      margin-bottom: 1.5rem;
+      color: #E6A100;
+  }
+
+    .promo {
+      font-size: 1.8rem;
+      color: white;
+      margin-bottom: 3rem;
     }
   
+    .start_tbn {
+      padding: 0.75rem 1.5rem;
+      background-color: #6E92E6;
+      color: #282E3C;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      width: 400px;
+       animation: pulse 2s infinite ease-in-out;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      
+  }
+  /* por qué al cambiar el boton a un ancla no me agarra las animaciones? */
   }
