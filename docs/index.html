@@ -3,64 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>AdaCurri</title>
     
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/adacurri_min.png" />
+    <link rel="stylesheet" href="./assets/main-d2b534c9.css">
   </head>
 
+  <script src="./js/main.js"></script>
+
   <body>
+   
+    <section class="hero">
+      <!--LOGO-->
+      <div class="logo-container">
+        <img
+          class="logo_landing"
+          src="./images/adacurri_min.png"
+          alt="Logo AdaCurri"
+        />
+        <img
+          class="letter_logo"
+          src="./images/adacurri2_min.png"
+          alt="Letra del logo"
+        />
+      </div>
+      <!--imagen chica-->
+      <div class="imagen-container">
+        <img
+          class="imag-girl"
+          src="./images/landing/chica_curri.png"
+          alt="Imagen de una chica y su curriculum"
+        />
+      </div>
+      <!--Texto-->
+            <div class="content_curri">    
+              <h1 class="makeCV">Crea tu curriculum Vitae</h1>
+              <p class="promo">Diseña y comparte tu perfil de forma profesional</p>
+              <button class="start_tbn">Comenzar CV</button>
+            </div>      
+      <!--Botón-->
+         </div>
+     </section>
+
     <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
-</header>
-
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
-
-    </li>
-  </ul>
-</main>
-
+      <!-- <main class="page__main"></main>
+ -->
       <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
+  <small class="footer_social_media">
+    <a href="https://facebook.com" target="_blank"
+      ><img src="./images/rrss/FB.png" alt="facebook"
+    /></a>
+    <a href="https://instagram.com/" target="_blank">
+      <img src="./images/rrss/IG.png" alt="instagram"
+    /></a>
+    <a href="https://twitter.com" target="_blank"
+      ><img src="./images/rrss/Twitter.png" alt="twitter"
+    /></a>
+    <a href="https://pinterest.com" target="_blank"
+      ><img src="./images/rrss/Pinterest.png" alt="pinterest"
+    /></a>
+    <a href="https://tiktok.com/" target="_blank"
+      ><img src="./images/rrss/TikTok.png" alt="tiktok"
+    /></a>
+    <a href="https://whatsapp.com/" target="_blank"
+      ><img src="./images/rrss/WhatsApp.png" alt="whatsapp"
+    /></a>
+    <a href="https://youtube.com/" target="_blank"
+      ><img src="./images/rrss/YT.png" alt="youtube"
+    /></a>
   </small>
+  <small class="footer_brand"> &copy; &#128521; Adacurri, 2025. </small>
 </footer>
 
     </div>

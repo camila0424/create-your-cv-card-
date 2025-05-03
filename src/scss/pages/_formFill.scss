@@ -7,14 +7,41 @@
   margin-inline: auto;
   border: solid 3px vars.$colorB1;
 }
+
 .form_title {
   font-family: vars.$tipo2;
   color: vars.$colorY2;
 }
+
 .formAdaCurri {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.formAda {
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 38px;
+  padding-left: 7px;
+}
+
+#labelPhoto {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 16px;
+  background: vars.$colorB1;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#profilePhoto {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .container__preview {
@@ -23,7 +50,6 @@
   padding: 30px;
   max-width: 500px;
   margin-inline: auto;
-  // display: inline-block;
   background: linear-gradient(45deg, #c2d0d3 0%, #dce8ec 100%);
   border: solid 3px vars.$colorB1;
 }
@@ -32,8 +58,40 @@
   margin: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: white;
   color: olive;
+  border: solid 3px dodgerblue;
 }
+
+.preview-photo {
+  width: 295px;
+  height: 295px;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 3px vars.$colorY2;
+}
+
+.form_socialmedia {
+  width: 295px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+.form_socialmedia_ancla {
+  font-size: 17px;
+  color: vars.$colorB2;
+}
+
+.svg-inline--fa{
+  height: 2em;
+}
+
+

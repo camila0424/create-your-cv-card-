@@ -11,12 +11,21 @@ const emailCard = document.querySelector(".js-preview_email");
 const phoneCard = document.querySelector(".js-preview_phone");
 const linkSocialCard = document.querySelector(".js-preview_linksocial");
 const moreAboutCard = document.querySelector(".js-preview_moreAbout");
+const gitSocialCard = document.querySelector(".js-preview_gitsocial")
+
+const inputFile = document.querySelector('#profilePhoto');
 const photoProfileCard = document.querySelector(".js-preview_photoProfile");
 
 const data = {
   name: '',
-  email: ''
-
+  lastname: '',
+  profilePhoto: '',
+  occupation: '',
+  email: '',
+  phone: '',
+  linksocial: '',
+  gitsocial: '',
+  moreAbout: ''
 };
 
 form.addEventListener("input", (event) => {
@@ -40,6 +49,8 @@ form.addEventListener("input", (event) => {
     phoneCard.textContent = valueInput;
   } else if (idInput === "linksocial") {
     linkSocialCard.textContent = valueInput;
+  } else if (idInput === "gitsocial") {
+    gitSocialCard.textContent = valueInput;
   } else if (idInput === "moreAbout") {
     moreAboutCard.textContent = valueInput;
   } else if (idInput === "profilePhoto") {
@@ -47,21 +58,30 @@ form.addEventListener("input", (event) => {
   } 
 });
 
+inputFile.addEventListener('change', () => {
+  const file = inputFile.files[0];
+  if (!file) return;  // si no hay nada seleccionado, salimos
+
+  // 3) leemos el fichero como data URL
+  const reader = new FileReader();
+  reader.addEventListener('load', () => {
+    // 4) al cargarse, ponemos la URL resultante como background
+    photoProfileCard.style.backgroundImage = `url(${reader.result})`;
+  });
+  reader.readAsDataURL(file);
+});
+
+
+
 // HEADER
 
-const navcontainer = document.querySelector(".nav_container")
-function showmenu() {
-  navcontainer.classList.remove("collapsed");
-}
-
-function hidemenu() {
-  navcontainer.classList.add("collapsed");
-}
-
-function handlemenu(event) {
-  if (newForm.classList.contains("collapsed")) {
-    showmenu();
+const navheader = document.querySelector(".nav_header");
+const hamburguer = document.querySelector(".hamburguer_header")
+hamburguer.addEventListener('click', () => {
+  if (navheader.classList.contains("nav_collapsed")) {
+    navheader.classList.remove("nav_collapsed");
+    hamburguer.classList.add('nav_collapsed')
   } else {
-    hidemenu();
+    navheader.classList.add("nav_collapsed");
   }
-}
+});
