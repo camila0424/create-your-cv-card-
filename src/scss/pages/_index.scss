@@ -1,5 +1,14 @@
 @use "../core/variables" as vars;
 
+.super-hero {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+body {
+  min-height: 100vh;
+} 
+
 //logo//
 .hero {
     display: flex;
@@ -98,7 +107,7 @@
 
 
 
-  @media (width > 768px) {
+  @media (width > 1200px) {
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr;
