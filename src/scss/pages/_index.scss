@@ -53,16 +53,13 @@ body {
 //girl//
 .imagen-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     margin-bottom: 2rem;
  
 }
 
 .imag-girl {
   width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 //text//
 .content_curri{
@@ -110,91 +107,6 @@ body {
   background-color: white;
 }
 
-@media (width > 768px) {
-  .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 1rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    align-items: center;
-  }
-  .logo-container {
-    grid-column: 2;
-    grid-row: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 0;
-    margin-top: 20px;
-    margin-left: 50px;
-  }
-
-  .imagen-container {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: end;
-    width: 70%;
-    margin-top: -120px;
-    margin-bottom: 35px;
-    margin-right: 70px;
-  }
-
-  .content_curri {
-    grid-column: 2;
-    grid-row: 2;
-    text-align: center;
-    justify-self: center;
-    margin-top: 50px;
-  }
-
-  .makeCV {
-    font-size: 2.5rem;
-    margin-top: -50px;
-    margin-bottom: 1.5rem;
-    color: #e6a100;
-  }
-
-  .promo {
-    font-size: 1.8rem;
-    color: white;
-    margin-bottom: 3rem;
-  }
-
-  .start_tbn {
-    padding: 0.75rem 1.5rem;
-    background-color: #6e92e6;
-    color: #282e3c;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.5rem;
-    cursor: pointer;
-<<<<<<< HEAD
-    width: 300px;
-    margin-top: 40px;
-    margin-bottom: 2rem;
-    margin-top: 4rem;
-    animation: pulse 2s infinite ease-in-out;
-    
-}
-@keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05); /* Crece un poquito */
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-.start_button:hover {
-      background-color: white;
-  }
-
 
 
   @media (width > 1280px) {
@@ -215,8 +127,7 @@ body {
       justify-content: flex-start;
       align-items: center;
       gap: 1rem;
-      margin-bottom: 0;
-      margin-top: 20px;
+      margin-top: 0.5rem;
       margin-left: 50px;
     }
 
@@ -224,24 +135,22 @@ body {
       grid-column:  1;
       grid-row:  2;
       justify-self: end;
-      width: 70%;
-      margin-top: -120px;
-      margin-bottom: 35px;
+      width: 75%;
+      margin-top: -8.5rem;
+      /* margin-bottom: 35px; */
       margin-right: 70px;
     }
-
+/* contenedor de texto y botón */
     .content_curri {
       grid-column: 2;
       grid-row: 2;
       text-align: center;
       justify-self: center;
-      margin-top: 50px;
-    
+        
     }
 
     .makeCV {
       font-size: 2.5rem;
-      margin-top: -50px;
       margin-bottom: 1rem;
       color: #E6A100;
   }
@@ -249,7 +158,7 @@ body {
     .promo {
       font-size: 1.8rem;
       color: white;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
   
     .start_tbn {
@@ -262,15 +171,29 @@ body {
       cursor: pointer;
       width: 400px;
        animation: pulse 2s infinite ease-in-out;
-      margin-bottom: 3rem;
       margin-top: 1.5rem;
       
-=======
-    width: 400px;
-    animation: pulse 2s infinite ease-in-out;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
->>>>>>> cf3eafb6100bf09ad2b97dbab8e6286dce3a0725
   }
-  /* por qué al cambiar el boton a un ancla no me agarra las animaciones? */
+    .enlace-btn{
+      color: white;
+    }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Crece un poquito */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.start_tbn:hover {
+    background-color: white;
+    
+  }
+.enlace-btn:hover {
+  color: #282e3c;
+}
 }
