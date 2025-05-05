@@ -2,22 +2,22 @@
 
 //logo//
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    text-align: center;
-    margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 3rem;
-    animation: shrinkIn 1.2s ease forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  animation: shrinkIn 1.2s ease forwards;
 }
 
 .logo_landing,
@@ -25,147 +25,142 @@
   max-height: 6rem;
   height: auto;
 }
-            /*animación del logo*/
-@keyframes shrinkIn { 
-    0% {
-      transform: scale(1.5); /* Empieza más grande */
-      opacity: 0;
-    }
-    50% {
-      transform: scale(0.9); /* Se reduce un poquito más de su tamaño normal */
-      opacity: 0.8;
-    }
-    100% {
-      transform: scale(1); /* Queda en su tamaño normal */
-      opacity: 1;
-    }
+/*animación del logo*/
+@keyframes shrinkIn {
+  0% {
+    transform: scale(1.5); /* Empieza más grande */
+    opacity: 0;
   }
+  50% {
+    transform: scale(0.9); /* Se reduce un poquito más de su tamaño normal */
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1); /* Queda en su tamaño normal */
+    opacity: 1;
+  }
+}
 
 //girl//
 .imagen-container {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 2rem;
- 
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
 }
 
 .imag-girl {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 //text//
 .makeCV {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    color: #E6A100;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #e6a100;
 }
 
 .promo {
-    font-size: 1.5rem;
-    color: white;
+  font-size: 1.5rem;
+  color: white;
 }
 //button//
 .start_tbn {
+  padding: 0.75rem 1.5rem;
+  background-color: #6e92e6;
+  color: #282e3c;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Crece un poquito */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.start_button:hover {
+  background-color: white;
+}
+
+@media (width > 1200px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    align-items: center;
+  }
+  .logo-container {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .imagen-container {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+    width: 70%;
+    margin-top: -120px;
+    margin-bottom: 35px;
+    margin-right: 70px;
+  }
+
+  .content_curri {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    justify-self: center;
+    margin-top: 50px;
+  }
+
+  .makeCV {
+    font-size: 2.5rem;
+    margin-top: -50px;
+    margin-bottom: 1.5rem;
+    color: #e6a100;
+  }
+
+  .promo {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 3rem;
+  }
+
+  .start_tbn {
     padding: 0.75rem 1.5rem;
-    background-color: #6E92E6;
-    color: #282E3C;
+    background-color: #6e92e6;
+    color: #282e3c;
     border: none;
     border-radius: 50px;
     font-size: 1.5rem;
     cursor: pointer;
-    width: 300px;
-    margin-top: 50px;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    width: 400px;
     animation: pulse 2s infinite ease-in-out;
-}
-@keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05); /* Crece un poquito */
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-.start_button:hover {
-      background-color: white;
-  }
-
-
-
-  @media (width > 768px) {
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-      gap: 1rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 3rem 1rem;
-      align-items: center;
-    }
-    .logo-container{
-      grid-column: 2;
-      grid-row: 1;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 0;
-      margin-top: 20px;
-      margin-left: 50px;
-    }
-
-    .imagen-container {
-      grid-column:  1;
-      grid-row:  2;
-      justify-self: end;
-      width: 70%;
-      margin-top: -120px;
-      margin-bottom: 35px;
-      margin-right: 70px;
-    }
-
-    .content_curri {
-      grid-column: 2;
-      grid-row: 2;
-      text-align: center;
-      justify-self: center;
-      margin-top: 50px;
-    
-    }
-
-    .makeCV {
-      font-size: 2.5rem;
-      margin-top: -50px;
-      margin-bottom: 1.5rem;
-      color: #E6A100;
-  }
-
-    .promo {
-      font-size: 1.8rem;
-      color: white;
-      margin-bottom: 3rem;
-    }
-  
-    .start_tbn {
-      padding: 0.75rem 1.5rem;
-      background-color: #6E92E6;
-      color: #282E3C;
-      border: none;
-      border-radius: 50px;
-      font-size: 1.5rem;
-      cursor: pointer;
-      width: 400px;
-       animation: pulse 2s infinite ease-in-out;
-      margin-bottom: 3rem;
-      margin-top: 3rem;
-      
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
   /* por qué al cambiar el boton a un ancla no me agarra las animaciones? */
-  }
+}
