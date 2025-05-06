@@ -1,7 +1,9 @@
 @use "../core/variables" as vars;
 
 .design_container {
-  margin: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-inline: 20px;
   padding: 30px;
   max-width: 500px;
   margin-inline: auto;
@@ -23,6 +25,8 @@
   height: 25px;
   width: 25px;
   background-color: white;
+  height: 25px;
+  width: 25px;
 }
 
 .color_B1 {
