@@ -1,39 +1,51 @@
 @use "../core/variables" as vars;
 
 .design_container {
-    margin: 20px;
-    padding: 30px;
-    max-width: 500px;
-    margin-inline: auto;
-    border: solid 3px vars.$colorB1;
-    line-height: 2.5;
+  margin: 20px;
+  padding: 30px;
+  max-width: 500px;
+  margin-inline: auto;
+  border: solid 3px vars.$colorB1;
+  line-height: 2.5;
 }
 
 .design_curri {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .colors_curri {
-    display: flex;
-    flex-direction: row;
-}
-  
-.color_curri {
-    height: 25px;
-    width: 25px;
-    background-color: white;
+  display: flex;
+  flex-direction: row;
 }
 
-.color_B1 {background-color: vars.$colorB1;}
-.color_B2 {background-color: vars.$colorB2;}
-.color_Y1 {background-color: vars.$colorY1;}
-.color_Y2 {background-color: vars.$colorY2;}
-.color_black {background-color: black;}
-.color_white {background-color: white}
+.color_curri {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+
+.color_B1 {
+  background-color: vars.$colorB1;
+}
+.color_B2 {
+  background-color: vars.$colorB2;
+}
+.color_Y1 {
+  background-color: vars.$colorY1;
+}
+.color_Y2 {
+  background-color: vars.$colorY2;
+}
+.color_black {
+  background-color: black;
+}
+.color_white {
+  background-color: white;
+}
 
 @media (max-width: 400px) {
-    .design_curri {
-        flex-direction: column;
-    }
+  .design_curri {
+    flex-direction: column;
   }
+}

@@ -10,3 +10,4 @@ hamburguer.addEventListener('click', () => {
     navheader.classList.add("nav_collapsed");
   }
 });
+
