@@ -1,25 +1,4 @@
 @use "../core/variables" as vars;
-
-.form_container {
-  margin: 20px;
-  padding: 30px;
-  max-width: 500px;
-  margin-inline: auto;
-  overflow: hidden;
-  line-height: 1.9;
-  border: solid 3px vars.$colorB1;
-}
-
-.form_head {
-  display: flex;
-  justify-content: space-between;
-}
-
-.form_title {
-  font-family: vars.$tipo2;
-  color: vars.$colorY2;
-}
-
 .formAdaCurri {
   display: flex;
   flex-direction: column;
@@ -33,24 +12,6 @@
   padding-left: 7px;
 }
 
-.js-btnCollapsedFormFill {
-  width: 50px;
-  height: 50px;
-  background-color: vars.$colorY2;
-  border-radius: 50%;
-  border: none;
-}
-
-.fa-chevron-down{
-  width: 30px;
-  height: 30px;
-  color: white;
-}
-
-.collapsed {
-  display: none;
-}
-
 .buttons_formFill {
   margin: 10px;
   margin-top: 20px;
@@ -58,7 +19,8 @@
   justify-content: space-around;
 }
 
-.js-createCardBtn, .js-refreshCardBtn {
+.js-createCardBtn,
+.js-refreshCardBtn {
   width: 175px;
   height: 50px;
   padding: 5px;
@@ -115,8 +77,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: 1.30;
-} 
+  line-height: 1.3;
+}
 
 .decoration {
   width: 10px;
@@ -147,41 +109,38 @@
   color: vars.$colorB2;
 }
 
-.svg-inline--fa{
+.svg-inline--fa {
   height: 2em;
 }
 
-@media (width > 1280px){
+@media (width > 1280px) {
+  .data__main {
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.data__main {
-  min-height: 100vh;
-  display:grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
+  .form_container {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    align-self: center;
+  }
+
+  .container__preview {
+    margin-block: 20px;
+    height: 90%;
+    max-width: 600px;
+    margin-inline: auto;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(45deg, #c2d0d3 0%, #dce8ec 100%);
+    border-radius: 15px;
+    border: solid 3px vars.$colorB1;
+  }
 }
-
-.form_container {
-  grid-column: 1/2;
-  grid-row:2/3;
-  width: 100%;
-  align-self: center;
-}
-
-.container__preview {
-  margin-block: 20px;
-  height: 90%;
-  max-width: 600px;
-  margin-inline: auto;
-  grid-column: 2/3;
-  grid-row: 1/3;
-  display: flex;
-  align-items: center;
-  padding: 50px;
-  background: linear-gradient(45deg, #c2d0d3 0%, #dce8ec 100%);
-  border-radius: 15px;
-  border: solid 3px vars.$colorB1;
-}
-}
-
-

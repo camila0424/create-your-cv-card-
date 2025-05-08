@@ -1,0 +1,38 @@
+@use "../core/variables" as vars;
+.form_container {
+  margin: 20px;
+  padding: 30px;
+  max-width: 500px;
+  margin-inline: auto;
+  overflow: hidden;
+  line-height: 1.9;
+  border: solid 3px vars.$colorB1;
+}
+
+.form_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_title {
+  font-family: vars.$tipo2;
+  color: vars.$colorY2;
+}
+
+.js-btnCollapsedFormFill {
+  width: 50px;
+  height: 50px;
+  background-color: vars.$colorY2;
+  border-radius: 50%;
+  border: none;
+}
+
+.fa-chevron-down {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.collapsed {
+  display: none;
+}

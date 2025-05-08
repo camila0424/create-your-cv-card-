@@ -17,14 +17,30 @@
   </head>
 
   <body>
+
       <load src="./partials/header.html" title="AdaCurriform" />
       <main class="data__main">
+        <div class="form_container">
+          <section class="form_head">
+            <h2 class="form_title">Elige tu diseño</h2>
+            <button class="js-btnCollapsedFormFill">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </section>
         <load src="./partials/form-design.html"/>
+        <div class="form_container">
+          <section class="form_head">
+            <h2 class="form_title">Completa tus datos</h2>
+            <button class="js-btnCollapsedFormFill">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </section>
           <load src="./partials/form-fill.html"
             aClass="link__adalab"
             text="Volver a la página principal"
             url="./index.html"
           />
+        </div>
           <load src="./partials/form-share.html"/>
         </p>
       </main>

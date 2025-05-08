@@ -1,3 +1,5 @@
+"use strict";
+
 // HEADER
 
 const navheader = document.querySelector(".nav_header");
