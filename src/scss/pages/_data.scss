@@ -31,3 +31,13 @@
   height: 30px;
   color: white;
 }
+
+@media (width > 1280px){
+.data__main {
+  // min-height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+}
