@@ -2,8 +2,7 @@
 
 
 // form-fill
-const btnCollapsedFormFill = document.querySelector(".js-btnCollapsedFormFill")
-const form = document.querySelector(".formAdaCurri");
+
 const nameCard = document.querySelector(".js-preview_name");
 const lastNameCard = document.querySelector(".js-preview_lastname");
 const occupationCard = document.querySelector(".js-preview_occupation");
@@ -29,10 +28,7 @@ const data = {
   moreAbout: ''
 };
 
-btnCollapsedFormFill.addEventListener("click", (event) => {
-  event.preventDefault();
-  form.classList.toggle("collapsed");
-})
+
 
 form.addEventListener("input", (event) => {
   const idInput = event.target.id;
