@@ -14,12 +14,11 @@
     
     
     <link rel="icon" href="./images/adacurri_min.png" />
-    <link rel="stylesheet" href="./assets/main-d2b534c9.css">
+    <link rel="stylesheet" href="./assets/main-9ba68a6e.css">
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
+      <header class="page__header js-header">
   <section class="logo_section">
     <img class="logo_header" src="./images/adacurri_min.png" alt="Adacurri" />
     <img class="brand_header" src="./images/adacurri2_min.png" alt="Adacurri" />
@@ -28,21 +27,60 @@
     <a class="hamburguer_header" href="#">&#x2630;</a>
     <ul class="nav_header nav_collapsed">
       <li>
-        <a href="index.html"> <i class="fas fa-home"></i>Inicio</a>
+        <a href="index.html"> Inicio</a>
       </li>
       <li>
-        <a href="data.html"> <i class="fas fa-file"></i>Crea tu CV</a>
+        <a href="data.html"> Crea tu CV</a>
       </li>
     </ul>
   </nav>
 </header>
 
-      <main>
-        
-          <div class="form_container">
-  <h2 class="form_title">Completa tus datos</h2>
+      <main class="data__main">
+        <div class="design_container">
+    <h2 class="form_title">Elige tu diseño</h2>
 
-  <form class="formAdaCurri">
+    <div class="design_curri">
+        <div class="mode_curri">
+            <div class="colors_curri">
+                <div class="color_curri color_B1"></div>
+                <div class="color_curri color_B2"></div>
+                <div class="color_curri color_Y1"></div>
+                <div class="color_curri color_Y2"></div>
+            </div>
+            <p>AdaCurri</p>
+        </div>
+        <div class="mode_curri">
+            <div class="colors_curri">
+                <div class="color_curri color_white"></div>
+                <div class="color_curri color_Y1"></div>
+                <div class="color_curri color_Y2"></div>
+                <div class="color_curri color_black"></div>
+            </div>
+            <p>Light</p>
+        </div>
+        <div class="mode_curri">
+            <div class="colors_curri">
+                <div class="color_curri color_black"></div>
+                <div class="color_curri color_B2"></div>
+                <div class="color_curri color_B1"></div>
+                <div class="color_curri color_white"></div>
+            </div>
+            <p>Dark</p>
+        </div>
+    </div>
+
+</div>
+
+          <div class="form_container">
+  <section class="form_head">
+    <h2 class="form_title">Completa tus datos</h2>
+    <button class="js-btnCollapsedFormFill">
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  </section>
+
+  <form class="formAdaCurri collapsed">
     <label for="name">Nombre</label>
     <input type="text" id="name" class="formAda" placeholder="Ej. Selene" />
 
@@ -54,10 +92,6 @@
       placeholder="Ej. Luna Lara"
     />
 
-    <span>Imagen de perfil</span>
-    <label id="labelPhoto" for="profilePhoto">Añadir imagen</label>
-    <input type="file" id="profilePhoto" class="formAda" name="image" />
-
     <label for="occupation">Ocupación</label>
     <input
       type="text"
@@ -65,6 +99,10 @@
       class="formAda"
       placeholder="Ej. Front-end Junior"
     />
+
+    <span>Imagen de perfil</span>
+    <label id="labelPhoto" for="profilePhoto">Añadir imagen</label>
+    <input type="file" id="profilePhoto" class="formAda" name="image" />
 
     <label for="email">Email</label>
     <input
@@ -106,39 +144,44 @@
       class="js-moreAbout"
       rows="10"
     ></textarea>
-
-    <button class="js-reateCardBtn">CREA TU CV</button>
+    <div class="buttons_formFill">
+      <button class="js-createCardBtn">CREA TU CV</button>
+      <button class="js-refreshCardBtn">BORRAR</button>
+    </div>
   </form>
 </div>
 
 <div class="container__preview">
   <section class="target__preview">
-    <h2 class="js-preview_name">Nombre</h2>
-    <h2 class="js-preview_lastname">Apellido</h2>
-    <h3 class="js-preview_occupation">Ocupación</h3>
+    <div class="decoration"></div>
+    <article class="dataSheet__preview">
+      <h2 class="js-preview_name">Nombre</h2>
+      <h2 class="js-preview_lastname">Apellido</h2>
+      <h3 class="js-preview_occupation">Ocupación</h3>
+    </article>
     <div class="preview-photo js-preview_photoProfile"></div>
 
     <div class="form_socialmedia">
       <a
         class="form_socialmedia_ancla js-preview_email"
-        href=""
+        href="#"
         target="_blank"
       >
         <i class="fa-solid fa-envelope"></i>
       </a>
-      <a class="form_socialmedia_ancla js-preview_phone" href="">
+      <a class="form_socialmedia_ancla js-preview_phone" href="#">
         <i class="fa-solid fa-mobile-screen"></i>
       </a>
       <a
         class="form_socialmedia_ancla js-preview_linksocial"
-        href=""
+        href="#"
         target="_blank"
       >
         <i class="fa-brands fa-linkedin"></i>
       </a>
       <a
         class="form_socialmedia_ancla js-preview_gitsocial"
-        href=""
+        href="#"
         target="_blank"
       >
         <i class="fa-brands fa-github"></i>
@@ -152,7 +195,7 @@
           
         </p>
       </main>
-      <footer class="page__footer">
+      <footer class="page__footer js-footer">
   <small class="footer_social_media">
     <a href="https://facebook.com" target="_blank"
       ><img src="./images/rrss/FB.png" alt="facebook"
@@ -179,7 +222,6 @@
   <small class="footer_brand"> &copy; &#128521; Adacurri, 2025. </small>
 </footer>
 
-    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>

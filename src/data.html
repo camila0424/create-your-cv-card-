@@ -10,25 +10,45 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/66349fc88a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="icon" href="./images/adacurri_min.png" />
   </head>
 
   <body>
-      <load src="./partials/header.html" title="AdaCurriform" />
-      <main class="data__main">
-        <load src="./partials/form-design.html"/>
-          <load src="./partials/form-fill.html"
-            aClass="link__adalab"
-            text="Volver a la página principal"
-            url="./index.html"
-          />
-          <load src="./partials/form-share.html"/>
-        </p>
-      </main>
-      <load src="./partials/footer.html" />
+    <load src="./partials/header.html" title="AdaCurriform" />
+    <main class="data_main">
+      <section class="data_head">
+        <load src="./partials/preview.html" />
+      </section>
+      <section class="data_head">
+        <h2 class="data_title">Elige tu diseño</h2>
+        <button class="btnCollapsedData">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </section>
+      <load src="./partials/form-design.html" />
+
+      <section class="data_head">
+        <h2 class="data_title">Completa tus datos</h2>
+        <button class="btnCollapsedData">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </section>
+      <load src="./partials/form-fill.html" />
+      <section class="data_head">
+        <h2 class="data_title">Comparte tu tarjeta</h2>
+        <button class="btnCollapsedData">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <load src="./partials/form-share.html" />
+      </section>
+    </main>
+    <load src="./partials/footer.html" />
     <script src="./js/main.js"></script>
   </body>
 </html>

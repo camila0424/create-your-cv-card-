@@ -1,14 +1,14 @@
 @use "../core/variables" as vars;
 
 .design_container {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  margin-inline: 20px;
-  padding: 30px;
-  max-width: 500px;
-  margin-inline: auto;
-  border: solid 3px vars.$colorB1;
-  line-height: 2.5;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-inline: 20px;
+    padding: 30px;
+    max-width: 500px;
+    margin-inline: auto;
+    border: solid 3px vars.$colorB1;
+    line-height: 2.5;
 }
 
 .design_curri {
