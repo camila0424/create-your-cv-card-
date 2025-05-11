@@ -1,17 +1,9 @@
-// "use strict";
+"use strict";
 
-// const btnCollapsedFormFill = document.querySelector(".js-btnCollapsedData")
-// const form = document.querySelector(".formAdaCurri");
+const btnCollapsedData = document.querySelector(".btnCollapsedData")
+const collapsedData = document.querySelector(".js_dataSection");
 
-// btnCollapsedFormFill.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   form.classList.toggle("collapsed");
-// })
-
-// const btnCollapsedDesign = document.querySelector(".design_curri")
-// const design = document.querySelector(".design_curri");
-
-// btnCollapsedDesign.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   design.classList.toggle("collapsed");
-// })
+btnCollapsedData.addEventListener("click", (event) => {
+event.preventDefault();
+collapsedData.classList.toggle("collapsed");
+})

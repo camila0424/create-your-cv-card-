@@ -1,18 +1,18 @@
 @use "../core/variables" as vars;
 
 .data_main {
-  margin-top: 8rem;
+  margin-top: auto;
   margin-inline: 2rem;
+  margin-bottom: 2rem;
   padding: 3rem;
-  margin-block: auto;
   line-height: 1.9;
   border: solid 3px vars.$colorB1;
 }
 
-// .data_head {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.data_head {
+  display: flex;
+  justify-content: space-between;
+}
 
 .data_title {
   font-family: vars.$tipo2;
@@ -33,13 +33,16 @@
   color: white;
 }
 
-// @media (width > 1280px) {
-//   .data__main {
-//     margin-top: 8rem;
-//     // min-height: 100vh;
-//     display: grid;
-//     justify-items: center;
-//     align-items: center;
-//     grid-template-columns: 1fr 1fr;
-//   }
+// .collapsed {
+//   display: none;
 // }
+@media (width > 1280px) {
+  .data__main {
+    margin-top: 8rem;
+    // min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
