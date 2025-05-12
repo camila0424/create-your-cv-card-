@@ -150,7 +150,7 @@ body {
   .makeCV {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #e6a100;
+    color: vars.$colorY2;
   }
 
   .promo {
@@ -161,8 +161,8 @@ body {
 
   .start_tbn {
     padding: 0.75rem 1.5rem;
-    background-color: #6e92e6;
-    color: #282e3c;
+    background-color: vars.$colorB1;
+    color: vars.$colorYB;
     border: none;
     border-radius: 50px;
     font-size: 1.5rem;
@@ -190,6 +190,6 @@ body {
     background-color: white;
   }
   .enlace-btn:hover {
-    color: #282e3c;
+    color: vars.$colorYB;
   }
 }
