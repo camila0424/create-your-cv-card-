@@ -34,4 +34,4 @@ const handleClickcreateCardBtn = (ev) =>{
 
 }
 
- 
+createCardBtn.addEventListener('click', handleClickcreateCardBtn)
