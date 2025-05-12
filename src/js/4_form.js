@@ -1,31 +1,30 @@
 "use strict";
 
-
 // form-fill
-
+const form = document.querySelector(".formAdaCurri");
 const nameCard = document.querySelector(".js-preview_name");
 const lastNameCard = document.querySelector(".js-preview_lastname");
 const occupationCard = document.querySelector(".js-preview_occupation");
-const emailCard = document.querySelector(".js-preview_email");
-const phoneCard = document.querySelector(".js-preview_phone");
-const linkSocialCard = document.querySelector(".js-preview_linksocial");
-const moreAboutCard = document.querySelector(".js-preview_moreAbout");
-const gitSocialCard = document.querySelector(".js-preview_gitsocial");
-const refreshCardBtn = document.querySelector("js-refreshCardBtn");
+const emailPreview = document.querySelector(".js-emailPreview");
+const whatsappPreview = document.querySelector(".js-whatsappPreview");
+const linkPreview = document.querySelector(".js-preview_linksocial");
+const gitPreview = document.querySelector(".js-preview_gitsocial");
 
 const inputFile = document.querySelector('#profilePhoto');
 const photoProfileCard = document.querySelector(".js-preview_photoProfile");
+const originalBg = window.getComputedStyle(photoProfileCard).backgroundImage;
+
+const refreshCardBtn = document.querySelector(".js-refreshCardBtn");
 
 const data = {
   name: '',
   lastname: '',
-  profilePhoto: '',
   occupation: '',
+  profilePhoto: '',
   email: '',
   phone: '',
   linksocial: '',
   gitsocial: '',
-  moreAbout: ''
 };
 
 
@@ -36,28 +35,38 @@ form.addEventListener("input", (event) => {
 
   data[idInput] = valueInput;
 
-  // console.log(data);
-
   if (idInput === "name") {
     nameCard.textContent = valueInput;
   } else if (idInput === "lastname") {
     lastNameCard.textContent = valueInput;
   } else if (idInput === "occupation") {
     occupationCard.textContent = valueInput;
-  } else if (idInput === "email") {
-    emailCard.textContent = valueInput;
-  } else if (idInput === "phone") {
-    phoneCard.textContent = valueInput;
-  } else if (idInput === "linksocial") {
-    linkSocialCard.textContent = valueInput;
-  } else if (idInput === "gitsocial") {
-    gitSocialCard.textContent = valueInput;
-  } else if (idInput === "moreAbout") {
-    moreAboutCard.textContent = valueInput;
-  // } else if (idInput === "profilePhoto") {
-  //   photoProfileCard.src = URL.createObjectURL(file);
   } 
+  else if (idInput === "email") {
+    emailPreview.href = (`https:// ${valueInput}`);
+  } 
+  else if (idInput === "whatsapp") {
+    whatsappPreview.href = (`https://wa.me/${valueInput}`);
+  } 
+  else if (idInput === "linksocial") {
+    linkPreview.href = (`https:// ${valueInput}`);
+  } 
+  else if (idInput === "gitsocial") {
+    gitPreview.href = (`https:// ${valueInput}`);
+  }
+
+  if( data.name === '' && data.lastname === '' && data.occupation === '' ) {
+    nameCard.textContent = 'Nombre' ;
+    lastNameCard.textContent = `Apellido`;
+    occupationCard.textContent = `Ocupación`;
+  } else {
+   nameCard;
+   lastNameCard;
+   occupationCard;
+  }
+
 });
+
 
 inputFile.addEventListener('change', () => {
   const file = inputFile.files[0];
@@ -72,7 +81,17 @@ inputFile.addEventListener('change', () => {
   reader.readAsDataURL(file);
 });
 
-refreshCardBtn.addEventListener("click", (event) => {
+
+
+refreshCardBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  form.reset();
-})
+  form.reset(); 
+  nameCard.textContent = 'Nombre' ;
+  lastNameCard.textContent = 'Apellido';
+  occupationCard.textContent = 'Ocupación';
+  photoProfileCard.style.backgroundImage = originalBg;
+  emailPreview.href = '';
+  whatsappPreview.href = '';
+  linkPreview.href = '';
+  gitPreview.hre = '';
+});
