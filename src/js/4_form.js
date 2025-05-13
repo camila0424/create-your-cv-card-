@@ -93,5 +93,5 @@ refreshCardBtn.addEventListener('click', (event) => {
   emailPreview.href = '';
   whatsappPreview.href = '';
   linkPreview.href = '';
-  gitPreview.hre = '';
+  gitPreview.href = '';
 });
