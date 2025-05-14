@@ -1,17 +1,16 @@
 @use "../core/variables" as vars;
 
 .data_main {
-  margin-top: auto;
   margin-inline: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 3rem;
   line-height: 1.9;
-  border: solid 3px vars.$colorB1;
 }
 
 .data_head {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .data_title {
@@ -20,16 +19,16 @@
 }
 
 .btnCollapsedData {
-  width: 50px;
-  height: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: vars.$colorY2;
   border-radius: 50%;
   border: none;
 }
 
 .fa-chevron-down {
-  width: 30px;
-  height: 30px;
+  width: 1.5rem;
+  height: 1.5rem;
   color: white;
 }
 
@@ -38,12 +37,38 @@
 }
 @media (width > 1280px) {
   .data_main {
-    min-height: 100vh;
-    // display: grid;
-    justify-items: center;
-    align-items: space-between;
-    // grid-template-columns: 1fr 1fr;
+    // min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     display: flex;
     flex-direction: row-reverse;
+    gap: 5rem;
+  }
+  .motherofsections {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: auto;
+    gap: 5rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+
+  .data_head {
+    display: inline-flex;
+    gap: 2rem;
+  }
+
+  .btnCollapsedData {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .fa-chevron-down {
+    width: 3rem;
+    height: 3rem;
+    color: white;
   }
 }
