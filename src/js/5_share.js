@@ -9,11 +9,21 @@ function handleClickcreateCardBtn(ev) {
 
   /*  const colorChecked = document.querySelector('.') */
   // aquí dentro va la info de raquel
+
+  
   const info = {
-    field1: "",
-    field2: "",
-    field3: "",
-  };
+  "field1": 0,
+  "field2": name.value,
+  "field3": lastname.value,
+  "field4": occupation.value,
+  "field5":  email.value,
+  "field6": phone.value,
+  "field7": linksocial.value,
+  "field8":  gitsocial.value,
+  "field9": "",
+  "photo": profilePhoto.value,
+};
+
   shareSection.innerHTML = "Enviando información";
 
   fetch("https://dev.adalab.es/api/info/data", {

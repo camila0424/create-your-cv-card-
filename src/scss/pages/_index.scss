@@ -127,6 +127,11 @@ body {
     margin-top: 0.5rem;
   
   }
+  .logo_landing,
+  .letter_logo {
+    max-height: 6rem;
+    
+  }
 
   .imagen-container {
     grid-column: 1;
@@ -150,7 +155,7 @@ body {
   .makeCV {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: vars.$colorY2;
+    color: vars.$colorY1;
   }
 
   .promo {
