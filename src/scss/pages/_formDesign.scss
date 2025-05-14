@@ -26,8 +26,8 @@
 
 // Cuadradito individual
 .color_curri {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 15px;
   background-color: white;
 }
 
@@ -38,10 +38,12 @@
 .color_Y2 {background-color: vars.$colorY2;}
 .color_black {background-color: black;}
 .color_white {background-color: white;}
-.color_pink1 {background-color: rgb(246, 132, 151);}
-.color_pink2 {background-color: rgb(212, 72, 121);}
-.color_beige1{background-color: rgb(171, 121, 59);}
-.color_beige2{background-color: rgb(94, 55, 9);}
+.color_pink0 {background-color: #E1999F;}
+.color_pink1 {background-color: #663635;}
+.color_pink2 {background-color: #DEB3AD;}
+.color_beige0{background-color: #2B4257;}
+.color_beige1{background-color: #88A9C3;}
+.color_beige2{background-color: #091235;}
 
 //Media provisional
 @media (max-width: 400px) {
@@ -52,34 +54,19 @@
 
 //Para accionar temitas
 .mode_0:hover, .mode_1:hover, .mode_2:hover {
-  color: vars.$colorY1;
-  letter-spacing: 0.5px;
+  color: vars.$colorB1;
+  letter-spacing: 0.25px;
+  font-weight: bold;
   transition: 0.5s;
 }
 
-.mode_0_on {
-  // color: yellow;
-  background-color: yellow;
-}
-.mode_1_on {
-  // color: bisque;
-  background-color: bisque;
-}
-.mode_2_on {
-  // color: pink;
-  background-color: pink;
-}
+.mode_0_on {color: vars.$colorY2;}
+.mode_0B_on {background-color: vars.$colorY2;}
 
-// //Pruebitas con el visualizado de krissy
-// .form_socialmedia {
-//   background-color: aquamarine;
-// }
-// .target__preview {
-//   background-color: rgb(215, 196, 255);
-// }
-// .decoration {
-//   color: rgb(245, 190, 117);
-// }
-// .mode_curri {
-//   background-color: aquamarine;
-// }
+.mode_1_on {color: #88A9C3;}
+.mode_1B_on {background-color: #88A9C3;}
+.mode_1BB_on {background-color: #091235;}
+
+.mode_2_on {color: #663635;}
+.mode_2B_on {background-color: #663635;}
+.mode_2BB_on {background-color: #DEB3AD;}
