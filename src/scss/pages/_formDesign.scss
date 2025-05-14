@@ -1,55 +1,85 @@
 @use "../core/variables" as vars;
 
-.design_container {
-    margin-top: 70px;
-    margin-bottom: 20px;
-    margin-inline: 20px;
-    padding: 30px;
-    max-width: 500px;
-    margin-inline: auto;
-    border: solid 3px vars.$colorB1;
-    line-height: 2.5;
-}
+// .design_container {
+//     margin-top: 70px;
+//     margin-bottom: 20px;
+//     margin-inline: 20px;
+//     padding: 30px;
+//     max-width: 500px;
+//     margin-inline: auto;
+//     border: solid 3px vars.$colorB1;
+//     line-height: 2.5;
+// }
 
+//Contenedor del contenido diseño
 .design_curri {
   display: flex;
   justify-content: space-between;
+  margin-block: 25px;
 }
 
+// Conjuntos de cuadrados
 .colors_curri {
   display: flex;
   flex-direction: row;
 }
 
+// Cuadradito individual
 .color_curri {
   height: 25px;
   width: 25px;
   background-color: white;
-  height: 25px;
-  width: 25px;
 }
 
-.color_B1 {
-  background-color: vars.$colorB1;
-}
-.color_B2 {
-  background-color: vars.$colorB2;
-}
-.color_Y1 {
-  background-color: vars.$colorY1;
-}
-.color_Y2 {
-  background-color: vars.$colorY2;
-}
-.color_black {
-  background-color: black;
-}
-.color_white {
-  background-color: white;
-}
+//Pintado de cada cuadrado
+.color_B1 {background-color: vars.$colorB1;}
+.color_B2 {background-color: vars.$colorB2;}
+.color_Y1 {background-color: vars.$colorY1;}
+.color_Y2 {background-color: vars.$colorY2;}
+.color_black {background-color: black;}
+.color_white {background-color: white;}
+.color_pink1 {background-color: rgb(246, 132, 151);}
+.color_pink2 {background-color: rgb(212, 72, 121);}
+.color_beige1{background-color: rgb(171, 121, 59);}
+.color_beige2{background-color: rgb(94, 55, 9);}
 
+//Media provisional
 @media (max-width: 400px) {
   .design_curri {
     flex-direction: column;
   }
 }
+
+//Para accionar temitas
+.mode_0:hover, .mode_1:hover, .mode_2:hover {
+  color: vars.$colorY1;
+  letter-spacing: 0.5px;
+  transition: 0.5s;
+}
+
+.mode_0_on {
+  // color: yellow;
+  background-color: yellow;
+}
+.mode_1_on {
+  // color: bisque;
+  background-color: bisque;
+}
+.mode_2_on {
+  // color: pink;
+  background-color: pink;
+}
+
+// //Pruebitas con el visualizado de krissy
+// .form_socialmedia {
+//   background-color: aquamarine;
+// }
+// .target__preview {
+//   background-color: rgb(215, 196, 255);
+// }
+// .decoration {
+//   color: rgb(245, 190, 117);
+// }
+// .mode_curri {
+//   background-color: aquamarine;
+// }
