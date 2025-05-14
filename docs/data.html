@@ -17,7 +17,7 @@
     
     
     <link rel="icon" href="./images/adacurri_min.png" />
-    <link rel="stylesheet" href="./assets/main-0867b92b.css">
+    <link rel="stylesheet" href="./assets/main-a771c53c.css">
   </head>
 
   <body>
@@ -53,14 +53,17 @@
 
     <div class="form_socialmedia">
       <a
-        class="form_socialmedia_ancla js-preview_email"
+        class="js-emailPreview form_socialmedia_ancla js-preview_email"
         href="#"
         target="_blank"
       >
         <i class="fa-solid fa-envelope"></i>
       </a>
-      <a class="form_socialmedia_ancla js-preview_phone" href="#">
-        <i class="fa-solid fa-mobile-screen"></i>
+      <a class="js-whatsappPreview form_socialmedia_ancla js-preview_phone" 
+        href="#"
+        target="_blank"  
+      >
+        <i class="fa-brands fa-whatsapp"></i>
       </a>
       <a
         class="form_socialmedia_ancla js-preview_linksocial"
@@ -77,9 +80,8 @@
         <i class="fa-brands fa-github"></i>
       </a>
     </div>
-
-    <p class="js-preview_moreAbout"></p>
   </section>
+  <button class="js-refreshCardBtn">Reset</button>
 </div>
 
       </section>
@@ -131,9 +133,7 @@
           <i class="fa-solid fa-chevron-down"></i>
         </button>
       </section>
-      
-
-  <form class="js_dataSection formAdaCurri collapsed">
+      <form class="js_dataSection formAdaCurri collapsed">
     <label for="name">Nombre</label>
     <input type="text" id="name" class="formAda" placeholder="Ej. Selene" />
 
@@ -163,13 +163,12 @@
       id="email"
       class="formAda"
       placeholder="Ej. seluna@gmail.com"
-      required
     />
 
-    <label for="phone">Teléfono</label>
+    <label for="whatsapp">Whatsapp</label>
     <input
       type="tel"
-      id="phone"
+      id="whatsapp"
       class="formAda"
       placeholder="Ej. 885-55-85-88"
     />
@@ -189,18 +188,6 @@
       class="formAda"
       placeholder="Ej. github.com/Seluna-92"
     />
-
-    <label for="moreAbout">Más acerca de mí</label>
-    <textarea
-      name="moreAbout"
-      id="moreAbout"
-      class="js-moreAbout"
-      rows="10"
-    ></textarea>
-    <div class="buttons_formFill">
-      <button class="js-createCardBtn">CREA TU CV</button>
-      <button class="js-refreshCardBtn">BORRAR</button>
-    </div>
   </form>
 </div>
 
@@ -210,13 +197,20 @@
           <i class="fa-solid fa-chevron-down"></i>
         </button>
       </section>
-      <section class="share-sect js_dataSection collapsed">
-  <h3 class="card-created">La tarjeta ha sido creada:</h3>
-  <a href="x">https:.....</a>
-  <a class="share-btn" href="x"
-    ><i class="fa-brands fa-twitter" style="color: #ffffff"></i>Compartir en
-    twitter</a
-  >
+      <section class="share-sect">
+  <button class="js-createCardBtn createCardBtn">CREA TU CV</button>
+
+  <section class="share-sect js_shareSection collapsed">
+    <h3 class="card-created">La tarjeta ha sido creada:</h3>
+    <a
+      href="https://patri-gl.github.io/pw-project-Promo-53-Module-2-Team-1/card.html?id=${data.infoID}"
+      >https://patri-gl.github.io/pw-project-Promo-53-Module-2-Team-1/card.html?id=${data.infoID}</a
+    >
+    <a class="share-btn" href="https://x.com/?lang=es"
+      ><i class="fa-brands fa-twitter" style="color: #ffffff"></i>Compartir en
+      twitter</a
+    >
+  </section>
 </section>
 
     </main>
