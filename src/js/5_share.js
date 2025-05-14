@@ -10,30 +10,62 @@ function handleClickcreateCardBtn(ev) {
   /*  const colorChecked = document.querySelector('.') */
   // aquí dentro va la info de raquel
 
+
+  /* "name": nameCard.value,
+    "lastName": lastNameCard.value,
+    "occupation": occupationCard.value,
+    "email": emailPreview.value,
+    "whatsapp": whatsappPreview.value,
+    "linkedin": linkPreview.value,
+    "gitHub": gitPreview.value,
+    "photo": photoProfileCard.value, */
   
   const info = {
   "field1": 0,
-  "field2": name.value,
-  "field3": lastname.value,
-  "field4": occupation.value,
-  "field5":  email.value,
-  "field6": phone.value,
-  "field7": linksocial.value,
-  "field8":  gitsocial.value,
-  "field9": "",
-  "photo": profilePhoto.value,
+  "field2": nameCard.value,
+  "field3": lastNameCard.value,
+  "field4": occupationCard.value,
+  "field5": emailPreview.value,
+  "field6": whatsappPreview.value,
+  "field7": linkPreview.value,
+  "field8": gitPreview.value,
+  "photo": photoProfileCard.value,
 };
+  if (nameCard.value === ''){
+    shareSection.innerHTML = "Falta por rellenar el nombre";
+  }
+  else if (lastNameCard.value === ''){
+    shareSection.innerHTML = "Falta por rellenar el apellido";
+  }
+  else if (occupationCard.value === ''){
+    shareSection.innerHTML = "Falta por rellenar el ocupación";
+  }
+  else if (emailPreview.value === ''){
+    shareSection.innerHTML = "Falta por rellenar el email";
+  }
+  else if (whatsappPreview.value === ''){
+    shareSection.innerHTML = "Falta por rellenar el whatsapp";
+  }
+  else if (linkPreview.value === ''){
+    shareSection.innerHTML = "Falta por rellenar el Linkedin";
+  }
+  else if (gitPreview.value === ''){
+    shareSection.innerHTML = "Falta por rellenar el GitHub";
+  }
+  else if (photoProfileCard.value === ''){
+    shareSection.innerHTML = "Falta por adjuntar la foto";
+  }
 
-  shareSection.innerHTML = "Enviando información";
+  /*   shareSection.innerHTML = "Enviando información"; */
+
+      console.log ("antes del fetch")
 
   fetch("https://dev.adalab.es/api/info/data", {
-      metod: "POST",
-      Headers: {
-        "content-Type": "application/json"
-      },
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
       body: JSON.stringify(info),
     })
-    .then((res) => res.JSON())
+    .then((res) => res.json())
     .then((data) => {
       console.log(data);
       if (data.success === false) {
@@ -48,4 +80,11 @@ function handleClickcreateCardBtn(ev) {
     });
 }
 
-createCardBtn.addEventListener('click', handleClickcreateCardBtn);
+
+console.log ('después de fetch')
+
+//--------EVENTO----------
+createCardBtn.addEventListener('click', handleClickcreateCardBtn );
+
+
+
