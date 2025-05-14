@@ -21,16 +21,18 @@ function handleClickcreateCardBtn(ev) {
     "photo": photoProfileCard.value, */
   
   const info = {
-  "field1": 0,
-  "field2": nameCard.value,
-  "field3": lastNameCard.value,
-  "field4": occupationCard.value,
-  "field5": emailPreview.value,
-  "field6": whatsappPreview.value,
-  "field7": linkPreview.value,
-  "field8": gitPreview.value,
-  "photo": photoProfileCard.value,
-};
+  "field1": "1",
+  "field2": data.name,
+  "field3": data.lastname,
+  "field4": data.occupation,
+  "field5": data.email,
+  "field6": data.linksocial,
+  "field7": data.gitsocial,
+  "field8": data.phone,
+  "photo": data.profilePhoto,
+  };
+  console.log ("esta es la info",info)
+  console.log (nameCard)
   if (nameCard.value === ''){
     shareSection.innerHTML = "Falta por rellenar el nombre";
   }
@@ -52,7 +54,7 @@ function handleClickcreateCardBtn(ev) {
   else if (gitPreview.value === ''){
     shareSection.innerHTML = "Falta por rellenar el GitHub";
   }
-  else if (photoProfileCard.value === ''){
+  else if (photoProfileCard.value === null ){
     shareSection.innerHTML = "Falta por adjuntar la foto";
   }
 
@@ -73,9 +75,17 @@ function handleClickcreateCardBtn(ev) {
           "No se ha podido guardar la información porque faltan campos por rellenar";
       } else {
         shareSection.innerHTML = `
-            <p>
-                Se ha guardado la información de tu Curriculum. Puedes verla en el siguiente enlace <a href="http://localhost:5173/card.html?id=${data.info}">http://localhost:5173/card.html?id=${data.info}</a>
-            </p>`;
+            
+            <h3 class="card-created">La tarjeta ha sido creada:</h3>
+           <h5>
+                Se ha guardado la información de tu Curriculum. Puedes verla en el siguiente enlace 
+            </h5>    
+                <a  href="https://patri-gl.github.io/pw-project-Promo-53-Module-2-Team-1/card.html?id=${data.infoID}"
+             >https://patri-gl.github.io/pw-project-Promo-53-Module-2-Team-1/card.html?id=${data.infoID}</a>
+            
+            <a class="share-btn" href="https://x.com/?lang=es"
+              ><i class="fa-brands fa-twitter" style="color: #ffffff"></i>Compartir en
+              twitter</a>`            
       }
     });
 }
