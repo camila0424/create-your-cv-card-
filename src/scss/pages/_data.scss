@@ -33,16 +33,17 @@
   color: white;
 }
 
-// .collapsed {
-//   display: none;
-// }
+.collapsed {
+  display: none;
+}
 @media (width > 1280px) {
-  .data__main {
-    margin-top: 8rem;
-    // min-height: 100vh;
-    display: grid;
+  .data_main {
+    min-height: 100vh;
+    // display: grid;
     justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
+    align-items: space-between;
+    // grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
