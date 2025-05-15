@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-//logo//
+//--------------logo
 .hero {
   display: flex;
   flex-direction: column;
@@ -25,16 +25,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 0.5rem; */
   animation: shrinkIn 1.2s ease forwards;
 }
 
 .logo_landing,
 .letter_logo {
-  max-height: 3.5rem;
+  max-height: 4.5rem;
   height: auto;
 }
-/*animación del logo*/
+//---------animación del logo
 @keyframes shrinkIn {
   0% {
     transform: scale(1.5); /* Empieza más grande */
@@ -50,23 +49,23 @@ body {
   }
 }
 
-//girl//
+//-------girl
 .imagen-container {
-   max-width: 80%;
+   max-width: 100%;
   margin-bottom: 2rem;
 }
 
 .imag-girl {
-  width: 100%;
+  width: 70%;
 }
-//text//
+//------text
 .content_curri {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .makeCV {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: vars.$colorY1;
   font-family: vars.$tipo2;
@@ -123,8 +122,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   /*  gap: 0.1rem; */
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   
   }
   .logo_landing,
@@ -137,12 +135,13 @@ body {
     grid-column: 1;
     grid-row: 2;
     justify-self: end;
-    width: 75%;
+    width: 100%;
     margin-top: -8.5rem;
-    /* margin-bottom: 35px; */
     margin-right: 70px;
   }
-
+  .imag-girl {
+    width: 100%;
+  }
   /* contenedor de texto y botón */
   .content_curri {
     grid-column: 2;
@@ -153,8 +152,7 @@ body {
   }
 
   .makeCV {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
     color: vars.$colorY1;
   }
 
@@ -192,7 +190,8 @@ body {
   }
 
   .start_tbn:hover {
-    background-color: white;
+    background-color: vars.$colorB2;
+    
   }
   .enlace-btn:hover {
     color: vars.$colorYB;
