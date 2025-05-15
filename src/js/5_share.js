@@ -9,16 +9,6 @@ function handleClickcreateCardBtn(ev) {
 
   /*  const colorChecked = document.querySelector('.') */
   // aquí dentro va la info de raquel
-
-
-  /* "name": nameCard.value,
-    "lastName": lastNameCard.value,
-    "occupation": occupationCard.value,
-    "email": emailPreview.value,
-    "whatsapp": whatsappPreview.value,
-    "linkedin": linkPreview.value,
-    "gitHub": gitPreview.value,
-    "photo": photoProfileCard.value, */
   
   const info = {
   "field1": "1",
@@ -58,7 +48,7 @@ function handleClickcreateCardBtn(ev) {
     shareSection.innerHTML = "Falta por adjuntar la foto";
   }
 
-  /*   shareSection.innerHTML = "Enviando información"; */
+ shareSection.innerHTML = "Enviando información"; 
 
       console.log ("antes del fetch")
 

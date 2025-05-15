@@ -1,9 +1,11 @@
 "use strict";
 
-const btnCollapsedData = document.querySelector(".btnCollapsedData")
-const collapsedData = document.querySelector(".js_dataSection");
+const btnCollapsedData = document.querySelectorAll(".btnCollapsedData");
+const collapsedData = document.querySelectorAll(".js_dataSection");
 
-btnCollapsedData.addEventListener("click", (event) => {
-event.preventDefault();
-collapsedData.classList.toggle("collapsed");
-})
+btnCollapsedData.forEach((button, index) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    collapsedData[index].classList.toggle("collapsed");
+  });
+});
