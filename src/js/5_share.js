@@ -1,65 +1,54 @@
-'use strict';
+"use strict";
 
-const createCardBtn = document.querySelector('.js-createCardBtn');
-const shareSection = document.querySelector('.js_shareSection');
-
-
-localStorage.setItem('info',JSON.stringify(info))
-const savedInfo = JSON.parse(localStorage.getItem('info'))
+const createCardBtn = document.querySelector(".js-createCardBtn");
+const shareSection = document.querySelector(".js_shareSection");
 
 function handleClickcreateCardBtn(ev) {
   ev.preventDefault();
 
   /*  const colorChecked = document.querySelector('.') */
   // aquí dentro va la info de raquel
-  
+
   const info = {
-  "field1": "1",
-  "field2": data.name,
-  "field3": data.lastname,
-  "field4": data.occupation,
-  "field5": data.email,
-  "field6": data.linksocial,
-  "field7": data.gitsocial,
-  "field8": data.phone,
-  "photo": data.profilePhoto,
+    field1: "1",
+    field2: data.name,
+    field3: data.lastname,
+    field4: data.occupation,
+    field5: data.email,
+    field6: data.linksocial,
+    field7: data.gitsocial,
+    field8: data.phone,
+    photo: data.profilePhoto,
   };
   /* console.log ("esta es la info",info)
   console.log (nameCard) */
-  if (nameCard.value === ''){
+  if (nameCard.value === "") {
     shareSection.innerHTML = "Falta por rellenar el nombre";
-  }
-  else if (lastNameCard.value === ''){
+  } else if (lastNameCard.value === "") {
     shareSection.innerHTML = "Falta por rellenar el apellido";
-  }
-  else if (occupationCard.value === ''){
+  } else if (occupationCard.value === "") {
     shareSection.innerHTML = "Falta por rellenar el ocupación";
-  }
-  else if (emailPreview.value === ''){
+  } else if (emailPreview.value === "") {
     shareSection.innerHTML = "Falta por rellenar el email";
-  }
-  else if (whatsappPreview.value === ''){
+  } else if (whatsappPreview.value === "") {
     shareSection.innerHTML = "Falta por rellenar el whatsapp";
-  }
-  else if (linkPreview.value === ''){
+  } else if (linkPreview.value === "") {
     shareSection.innerHTML = "Falta por rellenar el Linkedin";
-  }
-  else if (gitPreview.value === ''){
+  } else if (gitPreview.value === "") {
     shareSection.innerHTML = "Falta por rellenar el GitHub";
-  }
-  else if (photoProfileCard.value === null ){
+  } else if (photoProfileCard.value === null) {
     shareSection.innerHTML = "Falta por adjuntar la foto";
   }
 
- shareSection.innerHTML = "Enviando información"; 
+  shareSection.innerHTML = "Enviando información";
 
-      console.log ("antes del fetch")
+  console.log("antes del fetch");
 
   fetch("https://dev.adalab.es/api/info/data", {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(info),
-    })
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(info),
+  })
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -78,19 +67,14 @@ function handleClickcreateCardBtn(ev) {
             
             <a class="share-btn" href="https://x.com/?lang=es"
               ><i class="fa-brands fa-twitter" style="color: #ffffff"></i>Compartir en
-              twitter</a>`            
+              twitter</a>`;
       }
     });
 }
 
+console.log("después de fetch");
 
-console.log ('después de fetch')
-
-
+//const savedInfo = JSON.parse(localStorage.getItem("info"));
 
 //--------EVENTO----------
-createCardBtn.addEventListener('click', handleClickcreateCardBtn );
-
-
-
- 
+createCardBtn.addEventListener("click", handleClickcreateCardBtn);

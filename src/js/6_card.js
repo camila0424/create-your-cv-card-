@@ -1,5 +1,5 @@
-'use strict';
+"use strict";
 
-const finalCard = document.querySelector('.js_finalCard');
+const finalCard = document.querySelector(".js_finalCard");
 
-finalCard.innerHTML = (savedInfo);
+//finalCard.innerHTML = (savedInfo);
