@@ -1,5 +1,6 @@
 "use strict";
 
+import './0_localstorage.js';
 import './1_header.js';
 import './2_data.js';
 import './3_design.js';
