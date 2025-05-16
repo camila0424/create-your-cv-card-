@@ -4,6 +4,9 @@ const createCardBtn = document.querySelector('.js-createCardBtn');
 const shareSection = document.querySelector('.js_shareSection');
 
 
+localStorage.setItem('info',JSON.stringify(info))
+const savedInfo = JSON.parse(localStorage.getItem('info'))
+
 function handleClickcreateCardBtn(ev) {
   ev.preventDefault();
 
@@ -21,8 +24,8 @@ function handleClickcreateCardBtn(ev) {
   "field8": data.phone,
   "photo": data.profilePhoto,
   };
-  console.log ("esta es la info",info)
-  console.log (nameCard)
+  /* console.log ("esta es la info",info)
+  console.log (nameCard) */
   if (nameCard.value === ''){
     shareSection.innerHTML = "Falta por rellenar el nombre";
   }
@@ -70,7 +73,7 @@ function handleClickcreateCardBtn(ev) {
            <h5>
                 Se ha guardado la información de tu Curriculum. Puedes verla en el siguiente enlace 
             </h5>    
-                <a  href="https://patri-gl.github.io/pw-project-Promo-53-Module-2-Team-1/card.html?id=${data.infoID}"
+                <a  href="card.html"
              >https://patri-gl.github.io/pw-project-Promo-53-Module-2-Team-1/card.html?id=${data.infoID}</a>
             
             <a class="share-btn" href="https://x.com/?lang=es"
@@ -83,8 +86,11 @@ function handleClickcreateCardBtn(ev) {
 
 console.log ('después de fetch')
 
+
+
 //--------EVENTO----------
 createCardBtn.addEventListener('click', handleClickcreateCardBtn );
 
 
 
+ 
