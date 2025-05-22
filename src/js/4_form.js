@@ -82,6 +82,22 @@ refreshCardBtn.addEventListener("click", (event) => {
   event.preventDefault();
   form.reset();
   localStorage.clear();
+  if (localStorage.length === 0) {
+    nameCard.textContent = "Nombre";
+    lastNameCard.textContent = "Apellidos";
+
+    occupationCard.textContent = "Ocupación";
+
+    emailPreview.href = "";
+
+    whatsappPreview.href = "";
+
+    linkPreview.href = "";
+
+    gitPreview.href = "";
+
+    photoProfileCard.style.backgroundImage = "";
+  }
 
   Object.entries(resetValues).forEach(([key, value]) => {
     if (key === "photoProfileCard") {
