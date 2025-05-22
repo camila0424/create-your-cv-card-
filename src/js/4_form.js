@@ -9,6 +9,7 @@ const emailPreview = document.querySelector(".js-emailPreview");
 const whatsappPreview = document.querySelector(".js-whatsappPreview");
 const linkPreview = document.querySelector(".js-preview_linksocial");
 const gitPreview = document.querySelector(".js-preview_gitsocial");
+const containerPreview = document.querySelector(".js-containerPreview");
 
 const inputFile = document.querySelector("#profilePhoto");
 const photoProfileCard = document.querySelector(".js-preview_photoProfile");
@@ -80,17 +81,7 @@ inputFile.addEventListener("change", () => {
 refreshCardBtn.addEventListener("click", (event) => {
   event.preventDefault();
   form.reset();
-
-  // const resetValues = {
-  //   nameCard.textContent: "Nombre",
-  //   lastNameCard: "Apellido",
-  //   occupationCard: "Ocupación",
-  //   photoProfileCard: originalBg,
-  //   emailPreview: "",
-  //   whatsappPreview: "",
-  //   linkPreview: "",
-  //   gitPreview: "",
-  // };
+  localStorage.clear();
 
   Object.entries(resetValues).forEach(([key, value]) => {
     if (key === "photoProfileCard") {
