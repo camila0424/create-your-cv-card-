@@ -9,6 +9,10 @@ AdaCurri website has been created as group project exercise of module 2 within t
 - [@Patri-GL](https://github.com/Patri-GL)
 - [@RaquePZl](https://github.com/RaquelPZ)
 
+## Project Management
+
+[Kanban](https://github.com/users/Patri-GL/projects/5)
+
 ## License
 
 MIT License
