@@ -1,6 +1,6 @@
 # AdaCurri
 
-AdaCurri website has been created as group project exercise of module 2 within the [Adalab](https://adalab.es/) context of the Web Programming Intensive Bootcamp.
+[AdaCurri](https://patri-gl.github.io/pw-project-Promo-53-Module-2-Team-1/) website has been created as group project exercise of module 2 within the [Adalab](https://adalab.es/) context of the Web Programming Intensive Bootcamp.
 
 ## Author
 
