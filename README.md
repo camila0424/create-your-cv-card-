@@ -39,15 +39,48 @@ SOFTWARE.
 
 ## Lessons Learned
 
-Basics web layout design in HTML and CSS were practiced here:
+### JavaScript Fundamentals
+- DOM manipulation: selecting, creating, and modifying elements
+- Event handling (click, submit, keypress, etc.)
+- Basic programming concepts (variables, functions, conditionals, loops)
+- Data types and type coercion
+- Working with arrays and objects
+- Understanding scope (global vs local)
 
-- Flexbox
-- Positioning
-- Responsive design
-- Grid
-- Forms creation
+### Project Architecture
+- Structuring code for maintainability
+- Separation of concerns (HTML structure, CSS styling, JS functionality)
+- Creating reusable functions and components
+- Basic error handling and debugging techniques
 
-Plus use of GitHub
+### Development Process
+- Collaborative Git workflow with GitHub (branching, merging, PRs)
+- Pair programming benefits and challenges
+- Agile methodologies applied to web development
+- Importance of code reviews in team projects
+- Project planning and task division strategies
+
+### Frontend Skills Reinforcement
+- Advanced responsive design techniques
+- CSS Flexbox and Grid for complex layouts
+- Form validation (both client-side and basic server communication)
+- Accessibility improvements through JavaScript
+- Performance optimization for interactive elements
+
+### Challenges Overcome
+- Debugging asynchronous code execution
+- Managing state in a simple application
+- Handling user input and edge cases
+- Cross-browser compatibility issues
+- Team coordination and code integration challenges
+
+### Key Takeaways
+- How JavaScript brings interactivity to static pages
+- The importance of clean, readable code in team projects
+- Version control best practices for collaboration
+- Value of pseudocoding before implementation
+- Key role of Scrum Methodology on deliverables planning
+- How foundational HTML/CSS knowledge enables better JS integration
 
 ## Tech Stack
 
