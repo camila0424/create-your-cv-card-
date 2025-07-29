@@ -1,6 +1,6 @@
 # AdaCurri
 
-[AdaCurri](https://patri-gl.github.io/pw-project-Promo-53-Module-2-Team-1/) website has been created as group project exercise of module 2 within the [Adalab](https://adalab.es/) context of the Web Programming Intensive Bootcamp.
+[AdaCurri]() website has been created as group project exercise of module 2 within the [Adalab](https://adalab.es/) context of the Web Programming Intensive Bootcamp.
 
 ## Author
 
@@ -9,9 +9,13 @@
 - [@Patri-GL](https://github.com/Patri-GL)
 - [@RaquePZl](https://github.com/RaquelPZ)
 
-## Project Management
+## 🗺️ Page View
 
-[Kanban](https://github.com/users/Patri-GL/projects/5)
+Landing Page:
+![ Landing Page](./public/images/demo/landing.png)
+
+Form Page:
+![ Landing Page](./public/images/demo/form.png)
 
 ## License
 
@@ -40,6 +44,7 @@ SOFTWARE.
 ## Lessons Learned
 
 ### JavaScript Fundamentals
+
 - DOM manipulation: selecting, creating, and modifying elements
 - Event handling (click, submit, keypress, etc.)
 - Basic programming concepts (variables, functions, conditionals, loops)
@@ -48,12 +53,14 @@ SOFTWARE.
 - Understanding scope (global vs local)
 
 ### Project Architecture
+
 - Structuring code for maintainability
 - Separation of concerns (HTML structure, CSS styling, JS functionality)
 - Creating reusable functions and components
 - Basic error handling and debugging techniques
 
 ### Development Process
+
 - Collaborative Git workflow with GitHub (branching, merging, PRs)
 - Pair programming benefits and challenges
 - Agile methodologies applied to web development
@@ -61,6 +68,7 @@ SOFTWARE.
 - Project planning and task division strategies
 
 ### Frontend Skills Reinforcement
+
 - Advanced responsive design techniques
 - CSS Flexbox and Grid for complex layouts
 - Form validation (both client-side and basic server communication)
@@ -68,6 +76,7 @@ SOFTWARE.
 - Performance optimization for interactive elements
 
 ### Challenges Overcome
+
 - Debugging asynchronous code execution
 - Managing state in a simple application
 - Handling user input and edge cases
@@ -75,6 +84,7 @@ SOFTWARE.
 - Team coordination and code integration challenges
 
 ### Key Takeaways
+
 - How JavaScript brings interactivity to static pages
 - The importance of clean, readable code in team projects
 - Version control best practices for collaboration
